@@ -2,14 +2,23 @@
     font-family: Pixelify Sans, Arial;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #efe6dd;
     margin: 0;
-    padding-top: 400px;
+    /* padding-top: 400px; */
 }
 
 h1 {
     margin: 0;
+}
+
+/* Fixes scroll to top button conflicting with 400px padding in body tag */
+.scroll-to-top-container {
+    height: 400px;
 }
 
 .body-container {
@@ -66,6 +75,8 @@ h1 {
     border-bottom-width: 2px;
     height: 260px;
     background-color: #efe6dd;
+    /* Top most element */
+    z-index: 100;
 }
 
 .title {
@@ -143,6 +154,8 @@ h1 {
     bottom: 0;
     height: 50px;
     background-color: #bb4430;
+    /* Top most element */
+    z-index: 100;
 }
 
 .footer-content-container {

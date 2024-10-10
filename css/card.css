@@ -1,9 +1,21 @@
 .card-container {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;
-    background-color: lightpink;
+    margin-bottom: 80px;
+}
+
+.cuisine-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuisine-type {
+    margin: 10px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
 }
 
 .grid-container {
@@ -15,14 +27,14 @@
     margin: 10px;
     width: 220px;
     height: 300px;
-    background-color: lightblue;
+    background-color: #7ebdc2;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .card:hover {
-    animation: card-shake;
-    animation-duration: 0.2s;
-    /* animation-iteration-count: 2; */
-    animation-timing-function: ease-in-out;
+    transform: scale(1.1);
+    /* animation: card-shake 0.2s ease-in-out 2; */
 }

@@ -177,6 +177,11 @@ h1 {
     font-size: 24px;
 }
 
+.footer-middle-container a {
+    color: #efe6dd;
+    text-decoration: none;
+}
+
 .footer-end-container {
     flex: 1;
 }

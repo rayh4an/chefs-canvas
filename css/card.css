@@ -19,3 +19,10 @@
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
+
+.card:hover {
+    animation: card-shake;
+    animation-duration: 0.2s;
+    /* animation-iteration-count: 2; */
+    animation-timing-function: ease-in-out;
+}

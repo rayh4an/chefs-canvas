@@ -100,6 +100,10 @@ h1 {
     height: 40px;
 }
 
+.middle-container {
+    flex: 1;
+}
+
 .middle-section {
     display: flex;
     height: 50px;
@@ -129,4 +133,40 @@ h1 {
     border-style: solid;
     min-width: 800px;
     font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: #bb4430;
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-start-container {
+    flex: 1;
+}
+
+.footer-middle-container {
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    color: #efe6dd;
+    font-size: 24px;
+}
+
+.footer-end-container {
+    flex: 1;
+}
+
+.youtube-icon {
+    height: 40px;
 }

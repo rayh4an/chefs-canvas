@@ -20,18 +20,21 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightcoral;
 }
 
 .card {
+    display: flex;
     margin: 10px;
-    width: 220px;
+    width: 500px;
     height: 300px;
     background-color: #7ebdc2;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .card a {
@@ -49,9 +52,22 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: space-start;
-    height: 100%;
+    width: 200px;
     padding: 10px;
+    padding: 10px 0 10px 10px;
     /* background-color: lightpink; */
+}
+
+.card-ingredients-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 0;
+    /* overflow-y: scroll; */
+    /* background-color: lightgreen; */
+    /* border-box includes padding and border in the element's total width and height. */
+    box-sizing: border-box;
 }
 
 .card-title {
@@ -61,11 +77,70 @@
     width: 100%;
     height: 60px;
     background-color: #efe6dd;
-    border-radius: 6px;
+    border-radius: 6px 0px 0px 6px;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    text-align: center;
     /* padding: 6px; */
+}
+
+.ingredient-title-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    width: 100%;
+    height: 60px;
+    background-color: #bb4430;
+    border-radius: 0 6px 6px 0;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.recipe-ingredients {
+    font-size: 22px;
+    background-color: #bb4430;
+    width: 100%;
+}
+
+.ingredients-row-container {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient-row {
+    display: flex;
+    /* background-color: lightpink; */
+    margin: 6px 30px 6px 30px;
+    padding-left: 20px;
+    transition: transform 0.2s ease-in-out;
+    justify-content: start;
+    /* align-items: center; */
+}
+
+.ingredient-row:hover {
+    background-color: #f3dfa2;
+    border-radius: 50px;
+    transform: scale(1.1)
+}
+
+.checkmark {
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.checkmark:checked + .ingredient {
+    /* color: white; */
+    /* background-color: #bb4430; */
+    /* border-radius: 20px; */
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.ingredient {
+    margin: 10px;
 }
 
 .recipe-name {

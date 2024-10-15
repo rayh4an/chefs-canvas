@@ -18,6 +18,11 @@
     justify-content: center;
 }
 
+.cuisine-row {
+    display: flex;
+    align-items: center;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,4 +196,30 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.american {
+    display: flex;
+    flex-direction: column;
+}
+
+.american .grid-container,
+.chinese .grid-container,
+.indian .grid-container,
+.japanese .grid-container,
+.mexican .grid-container {
+    display: none;
+}
+
+.cuisine-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#american-checkbox:checked ~ .american .grid-container,
+#chinese-checkbox:checked ~ .chinese .grid-container,
+#indian-checkbox:checked ~ .indian .grid-container,
+#japanese-checkbox:checked ~ .japanese .grid-container,
+#mexican-checkbox:checked ~ .mexican .grid-container {
+    display: grid;
 }

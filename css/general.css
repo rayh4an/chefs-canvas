@@ -1,0 +1,204 @@
+* {
+    font-family: Pixelify Sans, Arial;
+}
+
+h4 {
+    display: inline;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #efe6dd;
+    margin: 0;
+    /* padding-top: 400px; */
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Fixes scroll to top button conflicting with 400px padding in body tag */
+.scroll-to-top-container {
+    height: 400px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-button {
+    font-size: 36px;
+    background-color: #bb4430;
+    border: none;
+    border-radius: 6px;
+    width: 380px;
+    height: 60px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.recipe-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.recipe-button:hover {
+    background-color: #d95e3f;
+}
+
+.description-container, .instructions-container, .members-container {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f3dfa2;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    height: 260px;
+    background-color: #efe6dd;
+    /* Top most element */
+    z-index: 100;
+}
+
+.title {
+    font-size: 60px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    /* Default direction is row */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-container {
+    flex: 1;
+}
+
+.left-section {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.left-section img {
+    height: 40px;
+}
+
+.middle-container {
+    flex: 1;
+}
+
+.middle-section {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.right-section {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.right-section img {
+    height: 40px;
+}
+
+.end-container {
+    flex: 1;
+}
+
+.search-bar {
+    background-color: #f3dfa2;
+    border-radius: 30px;
+    border-style: solid;
+    min-width: 800px;
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: #bb4430;
+    /* Top most element */
+    z-index: 100;
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-start-container {
+    flex: 1;
+}
+
+.footer-middle-container {
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    color: #efe6dd;
+    font-size: 24px;
+}
+
+.footer-middle-container a {
+    color: #efe6dd;
+    text-decoration: none;
+}
+
+.footer-end-container {
+    flex: 1;
+}
+
+.youtube-icon {
+    height: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
